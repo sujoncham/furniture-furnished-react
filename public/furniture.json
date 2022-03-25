@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "furniture 1",
+    "price": 350,
+    "image": "./images/22.jpg"
+  },
+  {
+    "id": 2,
+    "title": "furniture 1",
+    "price": 350,
+    "image": "./images/23.jpg"
+  },
+  {
+    "id": 3,
+    "title": "furniture 1",
+    "price": 350,
+    "image": "./images/24.jpg"
+  },
+  {
+    "id": 4,
+    "title": "furniture 1",
+    "price": 350,
+    "image": "./images/25.jpg"
+  },
+  {
+    "id": 5,
+    "title": "furniture 1",
+    "price": 350,
+    "image": "./images/26.jpg"
+  },
+  {
+    "id": 6,
+    "title": "furniture 1",
+    "price": 350,
+    "image": "./images/27.jpg"
+  },
+  {
+    "id": 7,
+    "title": "furniture 1",
+    "price": 350,
+    "image": "./images/28.jpg"
+  },
+  {
+    "id": 8,
+    "title": "furniture 1",
+    "price": 350,
+    "image": "./images/29.jpg"
+  },
+  {
+    "id": 9,
+    "title": "furniture 1",
+    "price": 350,
+    "image": "./images/30.jpg"
+  },
+  {
+    "id": 10,
+    "title": "furniture 1",
+    "price": 350,
+    "image": "./images/31.jpg"
+  },
+  {
+    "id": 11,
+    "title": "furniture 1",
+    "price": 350,
+    "image": "./images/32.jpg"
+  },
+  {
+    "id": 12,
+    "title": "furniture 1",
+    "price": 350,
+    "image": "./images/33.jpg"
+  }
+]
