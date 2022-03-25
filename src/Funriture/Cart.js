@@ -5,7 +5,7 @@ import React from 'react';
 const Cart = (props) => {
     const {cart} = props;
     return (
-        <div>
+        <div className='selected-cart'>
             <img className='cart-img' src={cart.image} alt="" /> <span>{cart.title} - {cart.price} - <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon> </span> 
         </div>
     );

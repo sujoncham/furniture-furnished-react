@@ -25,7 +25,28 @@
   padding: 20px;
 }
 
+.sticky h3 {
+  margin-top: 0px;
+}
+
 .cart-img {
   width: 50px;
   height: 30px;
+}
+
+.selected-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  border: 1px solid purple;
+  padding: 5px;
+  background-color: #777;
+}
+
+.button-action button {
+  display: block;
+  width: 50%;
+  margin: 5px auto;
+  padding: 10px;
 }

@@ -16,7 +16,8 @@ const Furniture = () => {
         const newCart = [...carts, product];
         setCarts(newCart);
     }
-    
+
+ 
     return (
         <div>
             <h3>Products:{furnitures.length}</h3>
@@ -30,7 +31,7 @@ const Furniture = () => {
                     ></FurnitureDetails>)
             }
             </div>
-            <div className="cart sticky">
+            <div className="cart">
                 <FurnitureCart carts={carts}></FurnitureCart>
             </div>
             </div>
