@@ -23,7 +23,7 @@ const Furniture = () => {
     }
 
     const singleCartRemove = () =>{
-        const newCart = [...carts];
+        const newCart = [];
         setCarts(newCart);
     }
 
