@@ -17,6 +17,17 @@ const Furniture = () => {
         setCarts(newCart);
     }
 
+    const removeCartHandle = () =>{
+        const newCart = [];
+        setCarts(newCart);
+    }
+
+    const singleCartRemove = () =>{
+        const newCart = [...carts];
+        setCarts(newCart);
+    }
+
+
  
     return (
         <div>
@@ -32,7 +43,7 @@ const Furniture = () => {
             }
             </div>
             <div className="cart">
-                <FurnitureCart carts={carts}></FurnitureCart>
+                <FurnitureCart singleCartRemove={singleCartRemove} removeCartHandle={removeCartHandle} carts={carts}></FurnitureCart>
             </div>
             </div>
            

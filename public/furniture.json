@@ -3,72 +3,72 @@
     "id": 1,
     "title": "furniture 1",
     "price": 350,
-    "image": "./images/22.jpg"
+    "image": "https://i.ibb.co/HYtgwjm/34.jpg"
   },
   {
     "id": 2,
     "title": "furniture 2",
     "price": 350,
-    "image": "./images/23.jpg"
+    "image": "https://i.ibb.co/grtz0Cb/33.jpg"
   },
   {
     "id": 3,
     "title": "furniture 3",
     "price": 350,
-    "image": "./images/24.jpg"
+    "image": "https://i.ibb.co/kKq7DhS/32.jpg"
   },
   {
     "id": 4,
     "title": "furniture 4",
     "price": 350,
-    "image": "./images/25.jpg"
+    "image": "https://i.ibb.co/pPSzydL/31.jpg"
   },
   {
     "id": 5,
     "title": "furniture 5",
     "price": 350,
-    "image": "./images/26.jpg"
+    "image": "https://i.ibb.co/CmZsxvd/30.jpg"
   },
   {
     "id": 6,
     "title": "furniture 6",
     "price": 350,
-    "image": "./images/27.jpg"
+    "image": "https://i.ibb.co/R4v61B1/29.jpg"
   },
   {
     "id": 7,
     "title": "furniture 7",
     "price": 350,
-    "image": "./images/28.jpg"
+    "image": "https://i.ibb.co/ngm05Jq/28.jpg"
   },
   {
     "id": 8,
     "title": "furniture 8",
     "price": 350,
-    "image": "./images/29.jpg"
+    "image": "https://i.ibb.co/c8kTv6n/27.jpg"
   },
   {
     "id": 9,
     "title": "furniture 9",
     "price": 350,
-    "image": "./images/30.jpg"
+    "image": "https://i.ibb.co/hs1bVrb/26.jpg"
   },
   {
     "id": 10,
     "title": "furniture 10",
     "price": 350,
-    "image": "./images/31.jpg"
+    "image": "https://i.ibb.co/CpcsyM6/25.jpg"
   },
   {
     "id": 11,
     "title": "furniture 11",
     "price": 350,
-    "image": "./images/32.jpg"
+    "image": "https://i.ibb.co/3Frb0m8/23.jpg"
   },
   {
     "id": 12,
     "title": "furniture 12",
     "price": 350,
-    "image": "./images/33.jpg"
+    "image": "https://i.ibb.co/kDBm7Mx/22.jpg"
   }
 ]
