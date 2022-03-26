@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import '../App.css';
+import Description from '../Description/Description';
 import FurnitureCart from './FurnitureCart';
 import FurnitureDetails from './FurnitureDetails';
 
 const Furniture = () => {
     const [furnitures, setFurnitures] = useState([]);
     const [carts, setCarts] = useState([]);
+    const [rando, setRando] = useState([]);
     useEffect(()=>{
       fetch('furniture.json')
       .then(res => res.json())
@@ -16,30 +19,32 @@ const Furniture = () => {
         const newCart = [...carts, product];
         if(newCart.length<=4){
             setCarts(newCart);
-            
         } else{
             alert("not more than 4");
-        }
-        
+        } 
     }
 
+    const randomHandle = (rando)=>{
+        const randomProduct = Math.floor(Math.random()*rando.length);
+        const newRando = carts[randomProduct];
+        setRando(newRando);
+        
+       }
+     
+       
     const removeCartHandle = () =>{
         const newCart = [];
+        const newRando = [];
         setCarts(newCart);
+        setRando(newRando);
     }
 
-    const singleCartRemove = () =>{
-        const newCart = [];
-        setCarts(newCart);
-    }
-
-
- 
     return (
-        <div>
+        <div className='container'>
             <h3>Products:{furnitures.length}</h3>
             <div className='product-items'>
             <div className='product'>
+            <div className="product-item">
             {
                 furnitures.map(furniture => <FurnitureDetails 
                     key={furniture.id} 
@@ -48,8 +53,12 @@ const Furniture = () => {
                     ></FurnitureDetails>)
             }
             </div>
+
+            <Description></Description>
+
+            </div>
             <div className="cart">
-                <FurnitureCart singleCartRemove={singleCartRemove} removeCartHandle={removeCartHandle} carts={carts}></FurnitureCart>
+                <FurnitureCart rando={rando} randomHandle={randomHandle} removeCartHandle={removeCartHandle} carts={carts}></FurnitureCart>
             </div>
             </div>
            

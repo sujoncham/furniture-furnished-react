@@ -1,74 +1,74 @@
 [
   {
     "id": 1,
-    "title": "furniture 1",
-    "price": 350,
+    "title": "Dining Room Decoration 1",
+    "price": 1150,
     "image": "https://i.ibb.co/HYtgwjm/34.jpg"
   },
   {
     "id": 2,
-    "title": "furniture 2",
-    "price": 350,
+    "title": "Drawing Room Decoration 2",
+    "price": 1200,
     "image": "https://i.ibb.co/grtz0Cb/33.jpg"
   },
   {
     "id": 3,
-    "title": "furniture 3",
-    "price": 350,
+    "title": "Dining Room Decoration 2",
+    "price": 800,
     "image": "https://i.ibb.co/kKq7DhS/32.jpg"
   },
   {
     "id": 4,
-    "title": "furniture 4",
-    "price": 350,
+    "title": "Furniture and Room Decoration 1",
+    "price": 650,
     "image": "https://i.ibb.co/pPSzydL/31.jpg"
   },
   {
     "id": 5,
-    "title": "furniture 5",
-    "price": 350,
+    "title": "Sofa and Room Decoration 1",
+    "price": 850,
     "image": "https://i.ibb.co/CmZsxvd/30.jpg"
   },
   {
     "id": 6,
-    "title": "furniture 6",
-    "price": 350,
+    "title": "Living Room Decoration Light 1",
+    "price": 970,
     "image": "https://i.ibb.co/R4v61B1/29.jpg"
   },
   {
     "id": 7,
-    "title": "furniture 7",
-    "price": 350,
+    "title": "Living Room Decoration Dark 1",
+    "price": 687,
     "image": "https://i.ibb.co/ngm05Jq/28.jpg"
   },
   {
     "id": 8,
-    "title": "furniture 8",
-    "price": 350,
+    "title": "Furniture and Room Decoration 2",
+    "price": 785,
     "image": "https://i.ibb.co/c8kTv6n/27.jpg"
   },
   {
     "id": 9,
-    "title": "furniture 9",
-    "price": 350,
+    "title": "Furniture and Room Decoration 1",
+    "price": 580,
     "image": "https://i.ibb.co/hs1bVrb/26.jpg"
   },
   {
     "id": 10,
-    "title": "furniture 10",
-    "price": 350,
+    "title": "Furniture and Balcony Decoration 1",
+    "price": 980,
     "image": "https://i.ibb.co/CpcsyM6/25.jpg"
   },
   {
     "id": 11,
-    "title": "furniture 11",
-    "price": 350,
+    "title": "Drawing Room Decoration 2",
+    "price": 930,
     "image": "https://i.ibb.co/3Frb0m8/23.jpg"
   },
   {
     "id": 12,
-    "title": "furniture 12",
-    "price": 350,
+    "title": "Furniture and Room Decoration 3",
+    "price": 1300,
     "image": "https://i.ibb.co/kDBm7Mx/22.jpg"
   }
 ]

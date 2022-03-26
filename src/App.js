@@ -6,9 +6,11 @@ function App() {
 
   return (
     <div className="App">
+        <div className='container'>
         <Header title="Furniture Shop"></Header>
 
         <Furniture></Furniture>
+        </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ const FurnitureDetails = (props) => {
     return (
         <div className='item'>
             <img src={image} alt="" />
-            <h3>Title : {title}</h3>
+            <h3>{title}</h3>
             <p>Price : {price}</p>
             <button onClick={()=> addToCartHandle(furniture)}>Add Product <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon> </button>
         </div>

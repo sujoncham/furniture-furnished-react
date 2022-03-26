@@ -1,23 +1,21 @@
 import React from 'react';
 import Cart from './Cart';
+import './Furniture.css';
+import RandomData from './RandomData';
 
 const FurnitureCart = (props) => {
-   const {carts, removeCartHandle, singleCartRemove} = props;
-
-   const randomHandle = ()=>{
-    const randomProduct = Math.floor(Math.random()*carts.length);
-    const newCarts = carts[randomProduct]
-    console.log(newCarts)
-   }
-  
+    
+   const {carts, removeCartHandle, randomHandle, rando} = props;
   
     return (
         <div className='sticky'>
-            <h3>Total Cart Selected : {props.carts.length}</h3> 
-            <h4>Cart List</h4>
+            <h3>Total Cart Selected : {carts.length}</h3> 
             {
-                carts.map(cart => <Cart key={cart.id} cart={cart} singleCartRemove ={singleCartRemove}></Cart>)
+                carts.map(cart => <Cart key={cart.id} cart={cart}></Cart>)
             }
+
+            <RandomData rando={rando}></RandomData>
+            
     
             <div className='button-action'>
                 <button onClick={()=> randomHandle(carts)}>Select one</button>

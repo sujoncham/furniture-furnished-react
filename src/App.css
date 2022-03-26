@@ -1,0 +1,11 @@
+.description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.answer {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid purple;
+}
