@@ -4,7 +4,6 @@ import Cart from './Cart';
 const FurnitureCart = (props) => {
    const {carts, removeCartHandle, singleCartRemove} = props;
 
-
    const randomHandle = ()=>{
     const randomProduct = Math.floor(Math.random()*carts.length);
     const newCarts = carts[randomProduct]
@@ -28,6 +27,6 @@ const FurnitureCart = (props) => {
     );
 };
 
-// https://github.com/Programming-Hero-Web-Course4/lucky-one-sujoncham
+
 
 export default FurnitureCart;

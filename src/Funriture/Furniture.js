@@ -14,7 +14,13 @@ const Furniture = () => {
     const addToCartHandle = (product) =>{
             // console.log(product);
         const newCart = [...carts, product];
-        setCarts(newCart);
+        if(newCart.length<=4){
+            setCarts(newCart);
+            
+        } else{
+            alert("not more than 4");
+        }
+        
     }
 
     const removeCartHandle = () =>{
