@@ -72,6 +72,10 @@
   color: #fff;
 }
 
+.selected-cart p {
+  font-size: 15px;
+}
+
 .button-action button {
   display: block;
   width: 50%;
@@ -101,10 +105,10 @@
   font-size: 13px;
 }
 
-.rando-data img {
+/* .rando-data img {
   width: 100%;
   height: 160px;
-}
+} */
 
 img {
   width: 100%;

@@ -19,19 +19,19 @@
   },
   {
     "id": 4,
-    "title": "Furniture and Room Decoration 1",
+    "title": "Study Room Decoration",
     "price": 650,
     "image": "https://i.ibb.co/pPSzydL/31.jpg"
   },
   {
     "id": 5,
-    "title": "Sofa and Room Decoration 1",
+    "title": "Sofa and Room Decoration",
     "price": 850,
     "image": "https://i.ibb.co/CmZsxvd/30.jpg"
   },
   {
     "id": 6,
-    "title": "Living Room Decoration Light 1",
+    "title": "Living Room Decoration Light",
     "price": 970,
     "image": "https://i.ibb.co/R4v61B1/29.jpg"
   },
@@ -43,19 +43,19 @@
   },
   {
     "id": 8,
-    "title": "Furniture and Room Decoration 2",
+    "title": "Waiting Room Decoration",
     "price": 785,
     "image": "https://i.ibb.co/c8kTv6n/27.jpg"
   },
   {
     "id": 9,
-    "title": "Furniture and Room Decoration 1",
+    "title": "Sitting Room Decoration",
     "price": 580,
     "image": "https://i.ibb.co/hs1bVrb/26.jpg"
   },
   {
     "id": 10,
-    "title": "Furniture and Balcony Decoration 1",
+    "title": "Sitting Chair Decoration",
     "price": 980,
     "image": "https://i.ibb.co/CpcsyM6/25.jpg"
   },

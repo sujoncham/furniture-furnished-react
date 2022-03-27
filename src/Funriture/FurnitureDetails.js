@@ -10,7 +10,7 @@ const FurnitureDetails = (props) => {
         <div className='item'>
             <img src={image} alt="" />
             <h3>{title}</h3>
-            <p>Price : {price}</p>
+            <p>Price : ${price.toFixed(2)}</p>
             <button onClick={()=> addToCartHandle(furniture)}>Add Product <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon> </button>
         </div>
     );
