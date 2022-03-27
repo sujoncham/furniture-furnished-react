@@ -40,25 +40,27 @@ const Furniture = () => {
     }
 
     return (
-        <div className='container'>
+        <div className='main'>
             <h3>Products:{furnitures.length}</h3>
+            <div className='container'>
             <div className='product-items'>
             <div className='product'>
-            <div className="product-item">
-            {
-                furnitures.map(furniture => <FurnitureDetails 
-                    key={furniture.id} 
-                    furniture={furniture} 
-                    addToCartHandle={addToCartHandle} 
-                    ></FurnitureDetails>)
-            }
-            </div>
+                <div className="product-item">
+                {
+                    furnitures.map(furniture => <FurnitureDetails 
+                        key={furniture.id} 
+                        furniture={furniture} 
+                        addToCartHandle={addToCartHandle} 
+                        ></FurnitureDetails>)
+                }
+                </div>
 
             <Description></Description>
 
             </div>
             <div className="cart">
                 <FurnitureCart rando={rando} randomHandle={randomHandle} removeCartHandle={removeCartHandle} carts={carts}></FurnitureCart>
+            </div>
             </div>
             </div>
            

@@ -7,5 +7,6 @@
 .answer {
   width: 30%;
   padding: 10px;
-  border: 1px solid purple;
+  border: 1px solid #f3a20a;
+  border-radius: 5px;
 }
