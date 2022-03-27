@@ -4,7 +4,7 @@ const Description = () => {
     return (
         <div className='description'>
             <div className='question1 answer'>
-                <h2>1. How Reset works?</h2>
+                <h2>1. How React works?</h2>
                 <h3>Answer:</h3>
             </div>
             <div className='question2 answer'>

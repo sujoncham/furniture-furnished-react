@@ -41,10 +41,12 @@ const Furniture = () => {
 
     return (
         <div className='main'>
-            <h3>Products:{furnitures.length}</h3>
-            <div className='container'>
+            
+            
             <div className='product-items'>
+            
             <div className='product'>
+            <h3>Products:{furnitures.length}</h3>
                 <div className="product-item">
                 {
                     furnitures.map(furniture => <FurnitureDetails 
@@ -62,7 +64,7 @@ const Furniture = () => {
                 <FurnitureCart rando={rando} randomHandle={randomHandle} removeCartHandle={removeCartHandle} carts={carts}></FurnitureCart>
             </div>
             </div>
-            </div>
+          
            
         </div>
     );

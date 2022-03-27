@@ -4,7 +4,7 @@
 }
 
 .product {
-  width: 80%;
+  width: 70%;
 }
 
 .product-item {
@@ -42,7 +42,7 @@
 }
 
 .cart {
-  width: 20%;
+  width: 30%;
 }
 
 .sticky {
@@ -102,7 +102,7 @@
 }
 
 .rando-data p {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 /* .rando-data img {
@@ -112,18 +112,4 @@
 
 img {
   width: 100%;
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 769px) {
-  .container {
-    width: 100%;
-  }
 }
