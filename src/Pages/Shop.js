@@ -1,9 +1,10 @@
 import React from 'react';
+import Furniture from '../Funriture/Furniture';
 
 const Shop = () => {
     return (
         <div>
-            <h1>Shop page</h1>
+            <Furniture></Furniture>
         </div>
     );
 };

@@ -31,7 +31,6 @@ const Furniture = () => {
         
        }
      
-       
     const removeCartHandle = () =>{
         const newCart = [];
         const newRando = [];
@@ -41,10 +40,7 @@ const Furniture = () => {
 
     return (
         <div className='main'>
-            
-            
             <div className='product-items'>
-            
             <div className='product'>
             <h3>Products:{furnitures.length}</h3>
                 <div className="product-item">
@@ -56,16 +52,12 @@ const Furniture = () => {
                         ></FurnitureDetails>)
                 }
                 </div>
-
             <Description></Description>
-
             </div>
             <div className="cart">
                 <FurnitureCart rando={rando} randomHandle={randomHandle} removeCartHandle={removeCartHandle} carts={carts}></FurnitureCart>
             </div>
             </div>
-          
-           
         </div>
     );
 };
