@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import React, { useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import auth from "../Firebase/Firebase.init";
@@ -9,6 +9,7 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setCorfirmPassword] = useState("");
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   const [validated, setValidated] = useState(false);
   const [registered, setRegistered] = useState(false);
 
@@ -22,11 +23,14 @@ const SignUp = () => {
     setPassword(event.target.value);
   };
 
+  const handleConfirmEvent = (event) => {
+    setCorfirmPassword(event.target.value);
+  };
+
   const handleRegistered = (event) =>{
     setRegistered(event.target.checked);
   }
 
-  let passwordText;
   const handleFormSubmit = (event) => {
     event.preventDefault();
     const form = event.currentTarget;
@@ -35,10 +39,10 @@ const SignUp = () => {
       return;
     }
 
-    if (password.length <= 6) {
-      passwordText = "password not less than 6 characters";
+    if (password) {
+      setSuccess("successfull");
     } else {
-      passwordText = "password ok";
+      setSuccess("unsuccessfull");
     }
 
     if (!/(?=.*[A-Z])/.test(password)) {
@@ -48,25 +52,66 @@ const SignUp = () => {
     setValidated(true);
     setError("");
 
-    console.log("form submitted", name, confirmPassword);
-    createUserWithEmailAndPassword(auth, email, password)
+    if(registered){
+      signInWithEmailAndPassword(auth, email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user)
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+    } else{
+      createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         const user = result.user;
         console.log(user);
         setEmail("");
         setPassword("");
+        EmailVerification();
+        updateNameUser();
       })
       .catch((error) => {
         setError(error.message);
       });
+    }
+
+    
   };
+
+  const handlePasswordReset = ()=>{
+    sendPasswordResetEmail(auth, email)
+    .then(()=>{
+      console.log("sent email to reset");
+    })
+    .catch((error)=>{
+      setError(error.message);
+    })
+  }
+
+  const updateNameUser = () =>{
+    updateProfile(auth.currentUser, {
+      displayName: name
+    }).then(() => {
+        console.log('updating name');
+    }).catch((error) => {
+      setError(error.message);
+    });
+  }
+
+  const EmailVerification = ()=>{
+    sendEmailVerification(auth.currentUser)
+    .then(()=>{
+      console.log("Email verification sent");
+    })
+  }
 
   return (
     <Row className="mt-5">
       <Col md={{ span: 6, offset: 3 }}>
         <h1>Please, {registered ? 'Login' : 'Register'}</h1>
         <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
-          <Form.Group className="mb-3" controlId="formBasicName">
+          { !registered && <Form.Group className="mb-3" controlId="formBasicName">
             <Form.Label>Your name</Form.Label>
             <Form.Control
               onBlur={handleNameEvent}
@@ -75,7 +120,7 @@ const SignUp = () => {
               placeholder="Enter name"
               required
             />
-          </Form.Group>
+          </Form.Group>}
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control
@@ -101,26 +146,29 @@ const SignUp = () => {
             />
           </Form.Group>
           <p className="text-danger">{error}</p>
-          <p className="text-danger">{passwordText}</p>
+          <p className="text-success">{success}</p>
           <Form.Control.Feedback type="invalid">
             Please choose a username.
           </Form.Control.Feedback>
-          <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
+          { !registered && <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
             <Form.Label>Confirm password</Form.Label>
             <Form.Control
               type="password"
+              onBlur={handleConfirmEvent}
               name="confirmPassword"
               placeholder="Confirm Password"
               required
             />
-          </Form.Group>
+          </Form.Group>}
 
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Check onChange={handleRegistered} type="checkbox" label="Already registered" />
           </Form.Group>
+          <Button onClick={handlePasswordReset} variant="link">Forgot Password?</Button>
+          <br />
 
           <Button variant="primary" type="submit">
-            Register
+          {registered ? 'Login' : 'Register'}
           </Button>
         </Form>
       </Col>
