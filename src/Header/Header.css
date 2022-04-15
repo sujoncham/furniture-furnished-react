@@ -1,13 +1,20 @@
 .header {
-  padding: 10px;
   background-color: #f3a20a;
+}
+
+.menubar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header a {
+.menu {
   display: flex;
   justify-content: end;
   align-items: center;
+}
+
+.menu a {
+  padding: 10px;
+  text-decoration: none;
 }
