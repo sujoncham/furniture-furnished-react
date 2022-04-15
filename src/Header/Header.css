@@ -6,8 +6,14 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
 .header a {
   display: flex;
   justify-content: end;
   align-items: center;
+=======
+.menu a {
+  padding: 10px;
+  text-decoration: none;
+>>>>>>> 56e53649fed4f071166d832892e718d08e6c2caa
 }
