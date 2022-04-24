@@ -2,72 +2,120 @@
   {
     "id": 1,
     "title": "Dining Room Decoration 1",
+    "category": "Men's Sneaker",
+    "seller": "Addidas",
+    "stock": 12,
+    "rating": 4,
     "price": 1150,
     "image": "https://i.ibb.co/HYtgwjm/34.jpg"
   },
   {
     "id": 2,
     "title": "Drawing Room Decoration 2",
+    "category": "Men's Sneaker",
+    "seller": "Addidas",
+    "stock": 12,
+    "rating": 4,
     "price": 1200,
     "image": "https://i.ibb.co/grtz0Cb/33.jpg"
   },
   {
     "id": 3,
     "title": "Dining Room Decoration 2",
+    "category": "Men's Sneaker",
+    "seller": "Addidas",
+    "stock": 12,
+    "rating": 4,
     "price": 800,
     "image": "https://i.ibb.co/kKq7DhS/32.jpg"
   },
   {
     "id": 4,
     "title": "Study Room Decoration",
+    "category": "Men's Sneaker",
+    "seller": "Addidas",
+    "stock": 12,
+    "rating": 4,
     "price": 650,
     "image": "https://i.ibb.co/pPSzydL/31.jpg"
   },
   {
     "id": 5,
     "title": "Sofa and Room Decoration",
+    "category": "Men's Sneaker",
+    "seller": "Addidas",
+    "stock": 12,
+    "rating": 4,
     "price": 850,
     "image": "https://i.ibb.co/CmZsxvd/30.jpg"
   },
   {
     "id": 6,
     "title": "Living Room Decoration Light",
+    "category": "Men's Sneaker",
+    "seller": "Addidas",
+    "stock": 12,
+    "rating": 4,
     "price": 970,
     "image": "https://i.ibb.co/R4v61B1/29.jpg"
   },
   {
     "id": 7,
     "title": "Living Room Decoration Dark 1",
+    "category": "Men's Sneaker",
+    "seller": "Addidas",
+    "stock": 12,
+    "rating": 4,
     "price": 687,
     "image": "https://i.ibb.co/ngm05Jq/28.jpg"
   },
   {
     "id": 8,
     "title": "Waiting Room Decoration",
+    "category": "Men's Sneaker",
+    "seller": "Addidas",
+    "stock": 12,
+    "rating": 4,
     "price": 785,
     "image": "https://i.ibb.co/c8kTv6n/27.jpg"
   },
   {
     "id": 9,
     "title": "Sitting Room Decoration",
+    "category": "Men's Sneaker",
+    "seller": "Addidas",
+    "stock": 12,
+    "rating": 4,
     "price": 580,
     "image": "https://i.ibb.co/hs1bVrb/26.jpg"
   },
   {
     "id": 10,
     "title": "Sitting Chair Decoration",
+    "category": "Men's Sneaker",
+    "seller": "Addidas",
+    "stock": 12,
+    "rating": 4,
     "price": 980,
     "image": "https://i.ibb.co/CpcsyM6/25.jpg"
   },
   {
     "id": 11,
     "title": "Drawing Room Decoration 2",
+    "category": "Men's Sneaker",
+    "seller": "Addidas",
+    "stock": 12,
+    "rating": 4,
     "price": 930,
     "image": "https://i.ibb.co/3Frb0m8/23.jpg"
   },
   {
     "id": 12,
     "title": "Furniture and Room Decoration 3",
+    "category": "Men's Sneaker",
+    "seller": "Addidas",
+    "stock": 12,
+    "rating": 4,
     "price": 1300,
     "image": "https://i.ibb.co/kDBm7Mx/22.jpg"
   }
