@@ -4,14 +4,13 @@ import './Furniture.css';
 import RandomData from './RandomData';
 
 const FurnitureCart = (props) => {
-    
    const {carts, removeCartHandle, randomHandle, rando} = props;
   
     return (
         <div className='sticky'>
-            <h3>Total Cart Selected : {carts.length}</h3> 
+            <h5>Total Cart : {carts.length}</h5> 
             {
-                carts.map(cart => <Cart key={cart.id} cart={cart}></Cart>)
+                carts.map(cart => <Cart key={cart._id} cart={cart}></Cart>)
             }
 
             <RandomData rando={rando}></RandomData>
