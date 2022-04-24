@@ -61,11 +61,15 @@
   },
   {
     "id": 7,
+<<<<<<< HEAD
     "title": "Living Room Decoration Dark 1",
     "category": "Men's Sneaker",
     "seller": "Addidas",
     "stock": 12,
     "rating": 4,
+=======
+    "title": "Living Room Decoration Dark",
+>>>>>>> bd8177bb6ce6c53a6ff50959ab824101b28dbc4c
     "price": 687,
     "image": "https://i.ibb.co/ngm05Jq/28.jpg"
   },
