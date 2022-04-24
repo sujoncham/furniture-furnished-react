@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
 import Description from "../Description/Description";
-import useProducts from "../Hooks/useProducts";
 import FurnitureCart from "./FurnitureCart";
 import FurnitureDetails from "./FurnitureDetails";
 
 const Furniture = () => {
-  const [furnitures, setFurnitures] = useProducts();
-  const [carts, setCarts] = useState([]);
+  const [furnitures, setFurnitures] = useState([]);
+  const [cart, setCart] = useState([]);
   const [rando, setRando] = useState([]);
   const [pageCount, setPageCount] = useState(0);
   const [page, setPage] = useState(0);
   const [size, setSize] = useState(0);
+
+  useEffect(()=>{
+    fetch( `http://localhost:5000/product?page=${page}&size=${size}`)
+    .then(res => res.json())
+    .then(data => setFurnitures(data));
+  }, [page, size]);
 
   useEffect(() => {
     fetch("http://localhost:5000/productCount/")
@@ -25,9 +30,9 @@ const Furniture = () => {
 
   const addToCartHandle = (product) => {
     // console.log(product);
-    const newCart = [...carts, product];
+    const newCart = [...cart, product];
     if (newCart.length <= 4) {
-      setCarts(newCart);
+        setCart(newCart);
     } else {
       alert("not more than 4");
     }
@@ -35,14 +40,14 @@ const Furniture = () => {
 
   const randomHandle = (rando) => {
     const randomProduct = Math.floor(Math.random() * rando.length);
-    const newRando = carts[randomProduct];
+    const newRando = cart[randomProduct];
     setRando(newRando);
   };
 
   const removeCartHandle = () => {
     const newCart = [];
     const newRando = [];
-    setCarts(newCart);
+    setCart(newCart);
     setRando(newRando);
   };
 
@@ -50,7 +55,7 @@ const Furniture = () => {
     <div className="main">
       <div className="product-items">
         <div className="product">
-          <h3>Products:{furnitures.length}</h3>
+         
           <div className="product-item">
             {furnitures.map((furniture) => (
               <FurnitureDetails
@@ -65,13 +70,13 @@ const Furniture = () => {
                   className={page === number ? "selected" : ""}
                   onClick={() => setPage(number)}
                 >
-                  {number + 1}
+                  {number}
                 </button>
               ))}
-              {size}
-              <select onChange={(e) => setSize(e.target.value)} name="" id="">
+              {/* {size} */}
+              <select onChange={(e) => setSize(e.target.value)}>
                 <option value="10">10</option>
-                <option value="20" selected>
+                <option value="20">
                   20
                 </option>
                 <option value="30">30</option>
@@ -86,7 +91,7 @@ const Furniture = () => {
             rando={rando}
             randomHandle={randomHandle}
             removeCartHandle={removeCartHandle}
-            carts={carts}
+            cart={cart}
           ></FurnitureCart>
         </div>
       </div>
