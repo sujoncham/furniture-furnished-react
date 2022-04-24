@@ -10,8 +10,6 @@ import Home from './Pages/Home';
 import Order from './Pages/Order';
 import Page404 from './Pages/Page404';
 import Shop from './Pages/Shop';
-import Login from './SignUpOut/Login';
-import SignUp from './SignUpOut/SignUp';
 
 function App() {
 
@@ -28,8 +26,7 @@ function App() {
           <Route path="/blogs" element={<Blogs></Blogs>}></Route>
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/contact" element={<Contact></Contact>}></Route>
-          <Route path="/login" element={<Login></Login>}></Route>
-          <Route path="/signup" element={<SignUp></SignUp>}></Route>
+
           <Route path="*" element={<Page404></Page404>}></Route>
         </Routes>
       </Container>
